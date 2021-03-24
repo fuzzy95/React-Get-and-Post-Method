@@ -10,7 +10,6 @@ const DataPosting = () => {
         csrf_token: 'T2Mekr9ZOYY72h9JczKNeiL7Nhc7XSbzT30QXwPq',
       })
       .then(res => {
-        console.log(res.data);
         setPosts(res.data);
       })
       .catch(err => {
@@ -32,17 +31,17 @@ const DataPosting = () => {
               <span>{value.live_type}</span>
             </div>
             <div className='flex space-x-2 w-1/5'>
-              <span className='font-semibold underline uppercase'>Title: </span>
+              <span className='font-semibold underline uppercase'>Title:</span>
               <span>{value.title}</span>
             </div>
             <div className='flex space-x-2 w-1/5'>
               <span className='font-semibold underline uppercase'>
-                User Id:{' '}
+                User Id:
               </span>
               <span>{value.user_id}</span>
             </div>
             <div className='flex space-x-2 w-1/5'>
-              <span className='font-semibold underline uppercase'>Name: </span>
+              <span className='font-semibold underline uppercase'>Name:</span>
               <span>{value.user_name}</span>
             </div>
           </div>
